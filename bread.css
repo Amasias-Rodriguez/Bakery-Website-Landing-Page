@@ -17,7 +17,152 @@ body{
 main{
     position: relative;
     width: 90%;
-    min-height: 90vh;
-    background: #FFFCF9;
+    min-height: 95vh;
+    top: 2rem;
+    background-color: #FFFCF9;
     border-radius: 15px;
+}
+
+/* main::before{
+    content: "";
+    position: absolute;
+    top: 0; 
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(/images/bakerybackground.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 0.2;
+    border-radius: 15px;
+} */
+
+.container{
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.section__Right{
+    padding: 4rem 3rem;
+}
+
+.section__Right--Logo{
+    position: relative;
+    right: 2rem;
+    bottom: 3rem;
+    width: 100px;
+    text-align: center;
+}
+
+.section__Right--Text{
+    position: relative;
+    bottom: 2rem;
+    width: 500px;
+}
+
+.section__Right--Text h3{
+    font-size: 2rem;
+}
+
+.section__Right--Text p{
+    font-size: 15px;
+    padding: 10px 0;
+    line-height: 1.5;
+}
+
+.section__Right--Text p span{
+    color: #BA494A;
+}
+
+.section__Right--buttons{
+    position: relative;
+    bottom: 15px;
+    width: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.section__Right--buttons-left{
+    display: flex;
+}
+
+.section__Right--buttons-left ion-icon{
+    width: 18px;
+    height: 18px;
+    margin-left: 5px;
+}
+
+.section__Right--buttons-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 30px;
+    background: #000;
+    cursor: pointer;
+}
+
+.section__Right--buttons-right ion-icon{
+    color: #fff;
+    background: #BA494A;
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 50px;
+}
+
+.section__Right--buttons-right h4{
+    margin-left: 10px;
+    color: #fff;
+}
+
+
+.section__Left{
+    outline: 1px solid blue;
+}
+
+.section__Right--footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.section__Right--footer-left img:nth-child(1){
+    position: absolute;
+    bottom: 10px;
+    width: 150px;
+    height: 150px;
+    margin-left: 10px;
+    object-fit: cover;
+    outline: 4px solid #bd7d3d;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.section__Right--footer-left img:nth-child(2){
+    width: 300px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.section__Right--footer-right{
+    position: relative;
+    top: 50px;
+    left: 10px;
+}
+
+.section__Right--footer-right h3{
+    font-size: 20px;
+}
+
+.section__Right--footer-right p{
+    font-size: 15px;
+    font-weight: 500;
+    padding: 12px 0;
+    line-height: 1.5;
 }
